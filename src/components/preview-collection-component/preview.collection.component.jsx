@@ -5,11 +5,11 @@ import './preview.collection.styles.scss'
 export default function CollectionPreview({title, items}) {
     console.log(items.filter((item, i) => i < 4))
     return (
-        <div>
+        <div className="collection-preview">
             <h1 className="title">{title.toUpperCase()}</h1>
             <div className="preview">
             {
-                items.filter((item, i) => i < 4).map(({id, otherItemProps}) => (
+                items.filter((item, i) => i < 4).map(({id, ...otherItemProps}) => (
                     <CollectionItem key={id} {...otherItemProps}/>
                 ))
             }
