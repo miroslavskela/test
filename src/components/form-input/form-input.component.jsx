@@ -1,7 +1,7 @@
 import React from 'react'
 import './form-input.styles.scss';
 export default function FormInput({handleChange, label, ...otherProps}) {
-    console.log(otherProps.value)
+
     return (
         <div className="group">
             {

@@ -3,7 +3,6 @@ import CollectionItem from '../collection-item/collection-item.component'
 import './preview.collection.styles.scss'
 
 export default function CollectionPreview({title, items}) {
-    console.log(items.filter((item, i) => i < 4))
     return (
         <div className="collection-preview">
             <h1 className="title">{title.toUpperCase()}</h1>
